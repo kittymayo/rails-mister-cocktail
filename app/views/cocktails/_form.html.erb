@@ -1,5 +1,20 @@
 
+<%  @cocktail = Cocktail.find(params[:id]) %>
+
 <%= simple_form_for([@cocktail]) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].
+  to_sentence if f.object.errors[:base].present? %>
+
+
+<div class="form-input">
   <%= f.input :name %>
-  <%= f.submit class: 'btn btn-primary' %>
+  <%= f.association :ingredients %>
+
+</div>
+
+<div class="form-actions">
+  <%= f.button :submit %>
+</div>
 <% end %>
+
