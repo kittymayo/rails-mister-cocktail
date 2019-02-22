@@ -8,6 +8,23 @@
 Ingredient.create(name: "lemon")
 Ingredient.create(name: "ice")
 Ingredient.create(name: "mint leaves")
+Ingredient.create(name: "segment of lemon")
+Ingredient.create(name: "soda")
+Ingredient.create(name: "baileys")
+Ingredient.create(name: "gordon's gin")
+Ingredient.create(name: "tonic water")
+Ingredient.create(name: "pint of bitter")
+Ingredient.create(name: "monkey shoulder")
+Ingredient.create(name: "cointreau")
+Ingredient.create(name: "sambuca")
+Ingredient.create(name: "pepper")
+Ingredient.create(name: "creme de menthe")
+Ingredient.create(name: "cassis")
+Ingredient.create(name: "lemonade")
+Ingredient.create(name: "water")
+Ingredient.create(name: "ribena")
+
+
 
 Cocktail.create(name: "I've got a dry martini!")
 Cocktail.create(name: "Midmorning Manhattan")
