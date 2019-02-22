@@ -1,8 +1,5 @@
-<h1>Cocktails#_form</h1>
-<p>Find me in app/views/cocktails/_form.html.erb</p>
 
-<%= simple_form_for([cocktail, dose]) do |f| %>
+<%= simple_form_for([@cocktail]) do |f| %>
   <%= f.input :name %>
-  <%= f.input :doses %>
   <%= f.submit class: 'btn btn-primary' %>
 <% end %>
