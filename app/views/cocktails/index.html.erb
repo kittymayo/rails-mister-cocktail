@@ -2,7 +2,7 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1545039776-d36e2b37cd23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80g);">
   <div class="container">
     <h1><strong>All</strong> cocktails</h1>
-    <h2> <%= link_to "create a cocktail", new_cocktail_path %></h2>
+
     <p>Some absolutely top drawer cocktails from across the British Isles</p>
   </div>
 </div>
@@ -10,6 +10,11 @@
 
 
 <div class="cards">
+
+  <div class="card-category"  style=" height: 100px; text-align: center; background-color: pink;">
+      <%= link_to "create a cocktail", new_cocktail_path %>
+
+  </div>
 
   <% @cocktails.each do |cocktail| %>
   <div class="card-category"  style=" height: 100px; text-align: center; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://source.unsplash.com/1600x900/?cocktail)">
