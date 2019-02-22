@@ -1,4 +1,4 @@
-<h1>Cocktails#index</h1>
+<h1>All cocktails</h1>
 <a class="btn btn-primary">Find me in app/views/cocktails/index.html.erb</a>
 <ul>
   <% @cocktails.each do |cocktail| %>
@@ -7,3 +7,5 @@
 </ul>
 
 <%= link_to "add cocktail", new_cocktail_path, :class => "btn btn-primary" %>
+
+<%= link_to "return to menu", root_path %>
