@@ -19,4 +19,8 @@
 </div>
 <% end %>
 
-<%= link_to "return to menu", root_path %>
+<ul>
+<li><%= link_to "Return to cocktail menu", root_path %></li>
+<li><%= link_to "Add ingredient", new_cocktail_dose_path(@cocktail)%></li>
+<li><%= link_to "Delete cocktail", delete_cocktail_path(@cocktail) %></li>
+</ul>
