@@ -6,12 +6,13 @@
   </div>
 </div>
 
-<ul>
+
+
+<div class="cards">
   <% @cocktails.each do |cocktail| %>
-  <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+  <div class="card-category"  style=" height: 100px; text-align: center; background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://source.unsplash.com/1600x900/?cocktail)">
+   <%= link_to cocktail.name, cocktail_path(cocktail) %>
+  </div>
   <% end %>
-</ul>
 
-<%= link_to "add cocktail", new_cocktail_path, :class => "btn btn-primary" %>
-
-<%= link_to "return to menu", root_path %>
+</div>
