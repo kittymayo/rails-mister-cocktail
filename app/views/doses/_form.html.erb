@@ -1,13 +1,19 @@
 <h1>Create a recipe for your cocktail</h1>
+<%  @cocktail = Cocktail.find(params[:cocktail_id]) %>
+
 <%= simple_form_for([@cocktail, @dose]) do |f| %>
-  <%= f.input :ingredient, :collection => Ingredient.all.to_a %>
+<%= f.error_notification %>
+<%= f.error_notification message: f.object.errors[:base].
+to_sentence if f.object.errors[:base].present? %>
+
+<div class="form-input">
   <%= f.input :description %>
-  <%= f.input :ingredient, :collection => Ingredient.all.to_a %>
-  <%= f.input :description %>
-  <%= f.input :ingredient, :collection => Ingredient.all.to_a %>
-  <%= f.input :description %>
-  <%= f.submit class: 'btn btn-primary' %>
+  <%= f.association :ingredient %>
+
+</div>
+
+<div class="form-actions">
+  <%= f.button :submit %>
+</div>
 <% end %>
-
-
 
